@@ -14,7 +14,7 @@ public class BasePage {
 	public RemoteWebDriver driver;
 	public static String browser;
 	public static int WAIT_TIME = 15;
-	public static int IMPLICITYLY_WAIT = 7;
+	public static int IMPLICITYLY_WAIT = 6;
 	private static int PAGE_LOAD_TIMEOUT = 30;
 
 	@Before

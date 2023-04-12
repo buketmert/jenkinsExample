@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -26,6 +28,7 @@ public class HomePage extends BasePage {
 	}
 
 	public HomePage goToFirstLink() {
+		driver.manage().timeouts().implicitlyWait(IMPLICITYLY_WAIT, TimeUnit.SECONDS);
 		WebElement firstElement = driver.findElement(By.xpath("//li[@id='i0']"));
 		firstElement.click();
 		System.out.println("Product detail page");
