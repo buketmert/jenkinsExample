@@ -29,7 +29,7 @@ public class HomePage extends BasePage {
 
 	public HomePage goToFirstLink() {
 		driver.manage().timeouts().implicitlyWait(IMPLICITYLY_WAIT, TimeUnit.SECONDS);
-		WebElement firstElement = driver.findElement(By.xpath("//li[@id='i0']"));
+		WebElement firstElement = driver.findElement(By.xpath("//li[@id='i0']//div//a"));
 		firstElement.click();
 		System.out.println("Product detail page");
 		return this;
