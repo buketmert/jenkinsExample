@@ -35,7 +35,7 @@ public class BasePage {
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "\\src\\test\\resources\\driver\\chromedriver111.exe");
 		driver = new ChromeDriver(chromeOptions);
-
+		driver.manage().deleteAllCookies();		
 		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(IMPLICITYLY_WAIT, TimeUnit.SECONDS);
 		driver.get("https://hepsiburada.com");
