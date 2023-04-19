@@ -21,7 +21,7 @@ public class HomePage extends BasePage {
 		WebElement searchElement = driver.findElement(By.className("theme-IYtZzqYPto8PhOx3ku3c"));
 		searchElement.sendKeys("Iphone");
 		searchElement.sendKeys(Keys.RETURN);
-		System.out.println("SEARCHED FOR IPHONE !!!");
+		System.out.println("SEARCHED FOR IPHONE SUNUM TESTTTTTTTT!!!");
 		return this;
 	}
 
